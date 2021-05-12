@@ -1,0 +1,14 @@
+# reset variables
+reset;
+
+# load model
+model tutorial1.mod;
+
+#select solver
+option solver cplex;
+
+# execute
+solve;
+
+#show results
+display x1, x2, z;
