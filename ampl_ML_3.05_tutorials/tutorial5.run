@@ -1,0 +1,26 @@
+#RESET THE AMPL ENVIROMENT
+reset;
+
+#LOAD THE MODEL
+model tutorial5.mod;
+
+#LOAD THE DATA
+data tutorial5.dat;
+
+#DISPLAY THE PROBLEM FORMULATION
+expand z, Constraint;
+
+#CHANGE THE SOLVER (optional)
+option solver cplex;
+option cplex_options 'sensitivity';
+
+#SOLVE
+solve;
+
+#SHOW RESULTS
+display X, z;
+# show range of variables
+display _varname, _var, _var.rc, _var.current, _var.up, _var.down;
+
+# show range of constraints
+display _conname, _con.body, _con.slack, _con.dual, _con.current, _con.up, _con.down;
