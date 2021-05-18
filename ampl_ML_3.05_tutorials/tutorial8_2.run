@@ -2,7 +2,7 @@
 reset;
 
 # load model
-model tutorial8_2.mod;
+model tutorial82.mod;
 
 #select solver
 option solver baron; # see https://ampl.com/products/solvers/all-solvers-for-ampl/
