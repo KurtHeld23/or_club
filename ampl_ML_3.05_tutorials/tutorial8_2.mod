@@ -1,12 +1,9 @@
-
-
 #Decision variables
 var x >=0;
 var y >=0;
 
 #objective
-maximize z: x*y-10000-8*x;
+minimize z: x+20*y;
 
 #Constraints
-subject to constraint: x+24.6*y==1500;
-
+subject to constraint: x**0.5+y==30;
