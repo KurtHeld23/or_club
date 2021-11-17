@@ -1,0 +1,11 @@
+reset; # reset variables
+
+model intro.mod; # tell where is the model
+
+option solver gurobi; # select solver
+
+
+
+solve; # solve
+
+display x1, x2, z; # display the solution
