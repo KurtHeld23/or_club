@@ -1,0 +1,14 @@
+# reset variables
+reset; 
+
+# load model
+model tutorial5_1.mod;
+
+# select solver
+option solver gurobi;
+
+# execute
+solve;
+
+#show the results
+display x1, x2,x3,x4, z;
