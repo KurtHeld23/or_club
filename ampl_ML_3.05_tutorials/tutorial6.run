@@ -11,7 +11,7 @@ data tutorial6.dat;
 expand z, Constraint;
 
 #CHANGE THE SOLVER (optional)
-option solver cplex;
+option solver gurobi;
 
 #SOLVE
 solve;
