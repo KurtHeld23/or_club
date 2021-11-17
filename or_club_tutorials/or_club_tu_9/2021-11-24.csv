@@ -1,0 +1,4 @@
+operation_id,dep_id,ops,weight,value,op_room_id
+xx_015,CH1,xxxx,160.0,2.0,HLK2
+xx_016,CH1,xxxx,190.0,2.0,HLK2
+xx_017,CH1,xxxx,300.0,2.0,HLK1
