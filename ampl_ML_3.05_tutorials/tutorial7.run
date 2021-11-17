@@ -11,7 +11,7 @@ data tutorial7.dat;
 expand total_cost, supply_constraint, demand_constraint;
 
 #CHANGE THE SOLVER (optional)
-option solver cplex;
+option solver gurobi;
 
 #SOLVE
 solve;
