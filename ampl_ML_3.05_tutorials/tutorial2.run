@@ -5,7 +5,7 @@ reset;
 model tutorial2.mod;
 
 # select solver
-option solver cplex;
+option solver gurobi;
 
 # execute
 solve;
