@@ -7,7 +7,7 @@ param C {J} ;  #objective function coefficients
 param A {I,J} ;  #constraint coefficients matrix
 param B {I} ;  #rhs of the constraints
 
-var X {J} >=0;  #decision variables
+var X {J} binary;  #decision variables
 
 minimize z:  sum {j in J} C[j] * X[j];
 
